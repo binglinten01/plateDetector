@@ -1,0 +1,42 @@
+2025-12-06 21:20:54,710 - DatasetPreparer - INFO - 02_prepare_dataset.py:684 - ============================================================
+2025-12-06 21:20:54,710 - DatasetPreparer - INFO - 02_prepare_dataset.py:685 - STARTING DATASET PREPARATION PIPELINE
+2025-12-06 21:20:54,710 - DatasetPreparer - INFO - 02_prepare_dataset.py:686 - ============================================================
+2025-12-06 21:20:54,710 - DatasetPreparer - INFO - 02_prepare_dataset.py:66 - Found 3 datasets: ['kaggle_vn', 'roboflow_lpr', 'roboflow_vietnam']
+2025-12-06 21:20:54,716 - DatasetPreparer - INFO - 02_prepare_dataset.py:71 -   kaggle_vn: 498 images
+2025-12-06 21:20:54,930 - DatasetPreparer - INFO - 02_prepare_dataset.py:71 -   roboflow_lpr: 24238 images
+2025-12-06 21:20:54,944 - DatasetPreparer - INFO - 02_prepare_dataset.py:71 -   roboflow_vietnam: 1005 images
+2025-12-06 21:20:54,944 - DatasetPreparer - INFO - 02_prepare_dataset.py:81 - Scanning kaggle_vn...
+2025-12-06 21:20:54,957 - DatasetPreparer - INFO - 02_prepare_dataset.py:81 - Scanning roboflow_lpr...
+2025-12-06 21:20:55,897 - DatasetPreparer - INFO - 02_prepare_dataset.py:81 - Scanning roboflow_vietnam...
+2025-12-06 21:20:55,963 - DatasetPreparer - INFO - 02_prepare_dataset.py:90 - Total images found: 25,741
+2025-12-06 21:20:55,964 - DatasetPreparer - INFO - 02_prepare_dataset.py:484 - Processing and deduplicating images...
+2025-12-06 21:20:56,220 - DatasetPreparer - INFO - 02_prepare_dataset.py:511 - Files to process: 25,741
+2025-12-06 21:35:30,396 - DatasetPreparer - INFO - 02_prepare_dataset.py:558 - Processing statistics:
+2025-12-06 21:35:30,396 - DatasetPreparer - INFO - 02_prepare_dataset.py:559 -   Total processed: 25,741
+2025-12-06 21:35:30,396 - DatasetPreparer - INFO - 02_prepare_dataset.py:560 -   Valid images: 24,704
+2025-12-06 21:35:30,396 - DatasetPreparer - INFO - 02_prepare_dataset.py:561 -   Validation failed: 0
+2025-12-06 21:35:30,397 - DatasetPreparer - INFO - 02_prepare_dataset.py:562 -   No label file: 1,037
+2025-12-06 21:35:30,397 - DatasetPreparer - INFO - 02_prepare_dataset.py:563 -   No annotations: 0
+2025-12-06 21:35:30,397 - DatasetPreparer - INFO - 02_prepare_dataset.py:565 - After deduplication: 24,704 unique images
+2025-12-06 21:35:30,407 - DatasetPreparer - INFO - 02_prepare_dataset.py:579 - Images per dataset:
+2025-12-06 21:35:30,408 - DatasetPreparer - INFO - 02_prepare_dataset.py:582 -   roboflow_lpr: 24206 images (1.04 annotations/image)
+2025-12-06 21:35:30,409 - DatasetPreparer - INFO - 02_prepare_dataset.py:582 -   kaggle_vn: 498 images (1.57 annotations/image)
+2025-12-06 21:35:30,426 - DatasetPreparer - INFO - 02_prepare_dataset.py:604 - Split sizes: Train=17,292, Val=4,941, Test=2,471
+2025-12-06 21:35:30,426 - DatasetPreparer - INFO - 02_prepare_dataset.py:611 - Saving to YOLO format...
+2025-12-06 21:35:30,427 - DatasetPreparer - INFO - 02_prepare_dataset.py:620 - Processing train split (17292 images)...
+2025-12-06 21:35:37,984 - DatasetPreparer - INFO - 02_prepare_dataset.py:620 - Processing val split (4941 images)...
+2025-12-06 21:35:40,063 - DatasetPreparer - INFO - 02_prepare_dataset.py:620 - Processing test split (2471 images)...
+2025-12-06 21:35:41,082 - DatasetPreparer - INFO - 02_prepare_dataset.py:660 - Dataset statistics saved to datasets\license_plate\dataset_statistics.json
+2025-12-06 21:35:41,082 - DatasetPreparer - INFO - 02_prepare_dataset.py:679 - YAML configuration saved to datasets\license_plate\data.yaml
+2025-12-06 21:35:41,082 - DatasetPreparer - INFO - 02_prepare_dataset.py:721 - 
+============================================================
+2025-12-06 21:35:41,082 - DatasetPreparer - INFO - 02_prepare_dataset.py:722 - PREPARATION COMPLETE
+2025-12-06 21:35:41,082 - DatasetPreparer - INFO - 02_prepare_dataset.py:723 - ============================================================
+2025-12-06 21:35:41,082 - DatasetPreparer - INFO - 02_prepare_dataset.py:724 - ✅ Total images: 24,704
+2025-12-06 21:35:41,082 - DatasetPreparer - INFO - 02_prepare_dataset.py:725 - ✅ Total annotations: 25,988
+2025-12-06 21:35:41,082 - DatasetPreparer - INFO - 02_prepare_dataset.py:726 - ✅ Train images: 17,292
+2025-12-06 21:35:41,082 - DatasetPreparer - INFO - 02_prepare_dataset.py:727 - ✅ Val images: 4,941
+2025-12-06 21:35:41,082 - DatasetPreparer - INFO - 02_prepare_dataset.py:728 - ✅ Test images: 2,471
+2025-12-06 21:35:41,082 - DatasetPreparer - INFO - 02_prepare_dataset.py:729 - 📁 Dataset location: D:\Pytorch 2\lpr_system\datasets\license_plate
+2025-12-06 21:35:41,082 - DatasetPreparer - INFO - 02_prepare_dataset.py:730 - ⚙️  Configuration: datasets\license_plate\data.yaml
+2025-12-06 21:35:41,082 - DatasetPreparer - INFO - 02_prepare_dataset.py:735 - 📊 Average annotations per image: 1.05

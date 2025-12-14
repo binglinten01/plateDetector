@@ -1,0 +1,89 @@
+2025-12-06 13:03:37,412 - DatasetDownloader - INFO - 01_download_datasets.py:77 - ✓ Roboflow API Key loaded: wEQ05QWI...G4mb
+2025-12-06 13:03:37,412 - DatasetDownloader - WARNING - 01_download_datasets.py:88 - ⚠ Kaggle API credentials not found
+2025-12-06 13:03:37,412 - DatasetDownloader - INFO - 01_download_datasets.py:89 - Kaggle datasets will use CLI (if installed)
+2025-12-06 13:03:38,308 - DatasetDownloader - INFO - 01_download_datasets.py:97 - ✓ Roboflow SDK already installed
+2025-12-06 13:03:38,308 - DatasetDownloader - INFO - 01_download_datasets.py:375 - ============================================================
+2025-12-06 13:03:38,308 - DatasetDownloader - INFO - 01_download_datasets.py:376 - DATASET DOWNLOAD PIPELINE
+2025-12-06 13:03:38,308 - DatasetDownloader - INFO - 01_download_datasets.py:377 - ============================================================
+2025-12-06 13:03:38,308 - DatasetDownloader - INFO - 01_download_datasets.py:77 - ✓ Roboflow API Key loaded: wEQ05QWI...G4mb
+2025-12-06 13:03:38,308 - DatasetDownloader - WARNING - 01_download_datasets.py:88 - ⚠ Kaggle API credentials not found
+2025-12-06 13:03:38,308 - DatasetDownloader - INFO - 01_download_datasets.py:89 - Kaggle datasets will use CLI (if installed)
+2025-12-06 13:03:38,308 - DatasetDownloader - INFO - 01_download_datasets.py:386 - 🧹 Cleaning raw directory...
+2025-12-06 13:03:38,308 - DatasetDownloader - INFO - 01_download_datasets.py:395 - 
+========================================
+2025-12-06 13:03:38,308 - DatasetDownloader - INFO - 01_download_datasets.py:396 - 📦 Processing: roboflow_lpr
+2025-12-06 13:03:38,308 - DatasetDownloader - INFO - 01_download_datasets.py:397 - ========================================
+2025-12-06 13:03:38,308 - DatasetDownloader - INFO - 01_download_datasets.py:398 - Description: License Plate Recognition dataset
+2025-12-06 13:03:38,308 - DatasetDownloader - INFO - 01_download_datasets.py:111 - Downloading roboflow_lpr using Roboflow SDK...
+2025-12-06 13:03:38,308 - DatasetDownloader - INFO - 01_download_datasets.py:127 -   Workspace: roboflow-universe-projects
+2025-12-06 13:03:38,308 - DatasetDownloader - INFO - 01_download_datasets.py:128 -   Project: license-plate-recognition-rxg4e
+2025-12-06 13:03:38,308 - DatasetDownloader - INFO - 01_download_datasets.py:129 -   Version: 4
+2025-12-06 13:03:38,308 - DatasetDownloader - INFO - 01_download_datasets.py:130 -   Format: yolov11
+2025-12-06 13:03:43,171 - DatasetDownloader - INFO - 01_download_datasets.py:143 -   Downloading to: datasets\raw\roboflow_lpr
+2025-12-06 13:14:42,774 - DatasetDownloader - INFO - 01_download_datasets.py:149 - ✓ Downloaded with format: yolov11
+2025-12-06 13:14:42,774 - DatasetDownloader - INFO - 01_download_datasets.py:165 - ✓ Dataset downloaded to: D:\Pytorch 2\lpr_system\License-Plate-Recognition-4
+2025-12-06 13:14:49,016 - DatasetDownloader - INFO - 01_download_datasets.py:206 - ✓ Moved 48479 files to datasets\raw\roboflow_lpr
+2025-12-06 13:14:49,016 - DatasetDownloader - INFO - 01_download_datasets.py:177 - ✅ Successfully downloaded roboflow_lpr
+2025-12-06 13:14:50,322 - DatasetDownloader - INFO - 01_download_datasets.py:308 - ✓ roboflow_lpr: 24238 images, 24240 labels
+2025-12-06 13:14:50,322 - DatasetDownloader - INFO - 01_download_datasets.py:313 -   Sample files: ['xemay1637_jpg.rf.1c410cfcef625338944df20accb55026.jpg', 'CarLongPlateGen2406_jpg.rf.9f1ad2b442956a248fccbb89f9876dfd.jpg', 'CarLongPlateGen3619_jpg.rf.5c692c81af8b2dd1cafe35581d3f585c.jpg']
+2025-12-06 13:14:50,339 - DatasetDownloader - INFO - 01_download_datasets.py:411 - ✅ SUCCESS: roboflow_lpr
+2025-12-06 13:14:50,339 - DatasetDownloader - INFO - 01_download_datasets.py:395 - 
+========================================
+2025-12-06 13:14:50,339 - DatasetDownloader - INFO - 01_download_datasets.py:396 - 📦 Processing: kaggle_vn
+2025-12-06 13:14:50,339 - DatasetDownloader - INFO - 01_download_datasets.py:397 - ========================================
+2025-12-06 13:14:50,339 - DatasetDownloader - INFO - 01_download_datasets.py:398 - Description: Vietnam License Plates from Kaggle
+2025-12-06 13:14:50,339 - DatasetDownloader - INFO - 01_download_datasets.py:213 - Downloading kaggle_vn from Kaggle...
+2025-12-06 13:14:50,339 - DatasetDownloader - INFO - 01_download_datasets.py:226 -   Running: kaggle datasets download -d bomaich/vnlicenseplate
+2025-12-06 13:15:52,401 - DatasetDownloader - INFO - 01_download_datasets.py:230 - ✓ Downloaded kaggle_vn
+2025-12-06 13:15:52,422 - DatasetDownloader - INFO - 01_download_datasets.py:308 - ✓ kaggle_vn: 498 images, 498 labels
+2025-12-06 13:15:52,422 - DatasetDownloader - INFO - 01_download_datasets.py:313 -   Sample files: ['clip17_49.jpg', 'clip6_19.jpg', 'clip19_new_11.jpg']
+2025-12-06 13:15:52,422 - DatasetDownloader - INFO - 01_download_datasets.py:411 - ✅ SUCCESS: kaggle_vn
+2025-12-06 13:15:52,422 - DatasetDownloader - INFO - 01_download_datasets.py:395 - 
+========================================
+2025-12-06 13:15:52,422 - DatasetDownloader - INFO - 01_download_datasets.py:396 - 📦 Processing: roboflow_vietnam
+2025-12-06 13:15:52,422 - DatasetDownloader - INFO - 01_download_datasets.py:397 - ========================================
+2025-12-06 13:15:52,422 - DatasetDownloader - INFO - 01_download_datasets.py:398 - Description: Vietnam License Plate dataset
+2025-12-06 13:15:52,422 - DatasetDownloader - INFO - 01_download_datasets.py:111 - Downloading roboflow_vietnam using Roboflow SDK...
+2025-12-06 13:15:52,422 - DatasetDownloader - INFO - 01_download_datasets.py:127 -   Workspace: tran-ngoc-xuan-tin-k15-hcm-dpuid
+2025-12-06 13:15:52,422 - DatasetDownloader - INFO - 01_download_datasets.py:128 -   Project: vietnam-license-plate-h8t3n
+2025-12-06 13:15:52,422 - DatasetDownloader - INFO - 01_download_datasets.py:129 -   Version: 1
+2025-12-06 13:15:52,422 - DatasetDownloader - INFO - 01_download_datasets.py:130 -   Format: coco
+2025-12-06 13:15:55,676 - DatasetDownloader - INFO - 01_download_datasets.py:143 -   Downloading to: datasets\raw\roboflow_vietnam
+2025-12-06 13:16:04,554 - DatasetDownloader - INFO - 01_download_datasets.py:149 - ✓ Downloaded with format: coco
+2025-12-06 13:16:04,554 - DatasetDownloader - INFO - 01_download_datasets.py:165 - ✓ Dataset downloaded to: D:\Pytorch 2\lpr_system\Vietnam-license-plate-1
+2025-12-06 13:16:04,956 - DatasetDownloader - INFO - 01_download_datasets.py:206 - ✓ Moved 1010 files to datasets\raw\roboflow_vietnam
+2025-12-06 13:16:04,956 - DatasetDownloader - INFO - 01_download_datasets.py:177 - ✅ Successfully downloaded roboflow_vietnam
+2025-12-06 13:16:04,989 - DatasetDownloader - INFO - 01_download_datasets.py:308 - ✓ roboflow_vietnam: 1005 images, 5 labels
+2025-12-06 13:16:04,989 - DatasetDownloader - INFO - 01_download_datasets.py:313 -   Sample files: ['CarLongPlate131_jpg.rf.b66a26b614ed9bb8faeb87b8d49c42bc.jpg', 'CarLongPlate281_jpg.rf.65fbd24de589b77929c1aadee9898f27.jpg', 'xemayBigPlate162_jpg.rf.1b904a7418e4a75210c7fe0772728a0d.jpg']
+2025-12-06 13:16:04,989 - DatasetDownloader - INFO - 01_download_datasets.py:411 - ✅ SUCCESS: roboflow_vietnam
+2025-12-06 13:16:04,989 - DatasetDownloader - INFO - 01_download_datasets.py:420 - 
+============================================================
+2025-12-06 13:16:04,989 - DatasetDownloader - INFO - 01_download_datasets.py:421 - DOWNLOAD COMPLETE
+2025-12-06 13:16:04,989 - DatasetDownloader - INFO - 01_download_datasets.py:422 - ============================================================
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:370 - 📊 Summary saved to: datasets\raw\download_summary.json
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:428 - ✅ Successful: 3/3 datasets
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:429 - ❌ Failed: 0 datasets
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:431 - 
+📊 DATASET DETAILS:
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:432 - ----------------------------------------
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:436 - roboflow_lpr:
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:437 -   Images: 24238
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:438 -   Size: 940.1 MB
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:439 -   Format: yolov11
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:436 - kaggle_vn:
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:437 -   Images: 498
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:438 -   Size: 237.6 MB
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:439 -   Format: yolo
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:436 - roboflow_vietnam:
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:437 -   Images: 1005
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:438 -   Size: 32.8 MB
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:439 -   Format: coco
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:441 - 
+========================================
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:442 - 🎯 TOTAL: 25741 images
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:443 - 💾 Total size: 1210.5 MB
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:444 - 📁 Location: D:\Pytorch 2\lpr_system\datasets\raw
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:445 - ========================================
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:458 - 
+🎉 Excellent: 25741 images
+2025-12-06 13:16:05,951 - DatasetDownloader - INFO - 01_download_datasets.py:459 - Ready for model training!

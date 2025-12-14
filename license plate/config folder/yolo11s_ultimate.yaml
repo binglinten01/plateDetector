@@ -1,0 +1,53 @@
+base:
+  epochs: 10  # Few epochs for HPO
+  imgsz: 640
+  device: 0
+  workers: 4
+  verbose: false
+  exist_ok: true
+
+# Search spaces
+search_space:
+  lr0:
+    type: float
+    low: 0.0001
+    high: 0.01
+    log: true
+    
+  batch:
+    type: categorical
+    choices: [8, 16, 24]
+    
+  optimizer:
+    type: categorical
+    choices: ["AdamW", "Adam", "SGD"]
+    
+  label_smoothing:
+    type: float
+    low: 0.0
+    high: 0.2
+    
+  hsv_h:
+    type: float
+    low: 0.0
+    high: 0.1
+    
+  hsv_s:
+    type: float  
+    low: 0.0
+    high: 0.9
+    
+  hsv_v:
+    type: float
+    low: 0.0
+    high: 0.9
+    
+  mosaic:
+    type: float
+    low: 0.0
+    high: 1.0
+    
+  mixup:
+    type: float
+    low: 0.0
+    high: 0.5

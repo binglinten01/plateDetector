@@ -1,0 +1,73 @@
+(myenv) PS D:\Pytorch 2\lpr_system> python .\scripts\05_augment_dataset.py
+2025-12-07 11:30:10,657 - INFO - Initialized UltimateDatasetAugmenter
+2025-12-07 11:30:10,657 - INFO - Augmentation pipelines: 6
+2025-12-07 11:30:10,657 - INFO - ============================================================
+2025-12-07 11:30:10,657 - INFO - STARTING ULTIMATE DATASET AUGMENTATION PIPELINE
+2025-12-07 11:30:10,672 - INFO - ============================================================
+2025-12-07 11:30:10,672 - INFO - 
+🎨 Augmenting TRAIN split...
+2025-12-07 11:30:10,758 - INFO - Target: 31024 images, Need: 15512 augmentations
+2025-12-07 11:30:10,758 - INFO - Augmentations per image: 1
+Augmenting train: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 15512/15512 [07:22<00:00, 35.06it/s]
+2025-12-07 11:37:33,183 - INFO - 
+🎨 Augmenting VAL split...
+2025-12-07 11:37:33,186 - INFO - Target: 8856 images, Need: 4428 augmentations
+2025-12-07 11:37:33,186 - INFO - Augmentations per image: 1
+Augmenting val: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4428/4428 [01:36<00:00, 45.95it/s]
+2025-12-07 11:39:09,557 - INFO - 
+🎨 Augmenting TEST split...
+2025-12-07 11:39:09,575 - INFO - Target: 4454 images, Need: 2227 augmentations
+2025-12-07 11:39:09,575 - INFO - Augmentations per image: 1
+Augmenting test: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2227/2227 [00:53<00:00, 41.50it/s]
+2025-12-07 11:40:03,266 - INFO - 📄 Augmentation report saved to: datasets\04_augmented\ultimate_augmentation_report.json
+2025-12-07 11:40:03,267 - INFO - 📁 Augmented dataset structure created at: datasets\04_augmented
+
+======================================================================
+DATASET AUGMENTATION - COMPLETE SUMMARY
+======================================================================
+
+📊 AUGMENTATION STATISTICS
+   Original dataset size: 22,167
+   Augmented images created: 22,061
+   Final dataset size: 44,228
+   Augmentation ratio: 1.00x
+   Size increase: 99.5%
+
+🎨 PIPELINE USAGE
+   Advanced                 :  5521 (25.0%)
+   Noise Blur               :  4496 (20.4%)
+   Geometric                :  4314 (19.6%)
+   Weather Lighting         :  3327 (15.1%)
+   Basic                    :  2219 (10.1%)
+   Rare Cases               :  2184 (9.9%)
+
+📈 SPLIT-WISE RESULTS
+
+   TRAIN :
+     Original images: 15,512
+     Augmented images: 15,432
+     Augmentation ratio: 0.99x
+
+   VAL   :
+     Original images: 4,428
+     Augmented images: 4,415
+     Augmentation ratio: 1.00x
+
+   TEST  :
+     Original images: 2,227
+     Augmented images: 2,214
+     Augmentation ratio: 0.99x
+
+📁 OUTPUT LOCATIONS
+   Augmented dataset: datasets\04_augmented
+   Augmentation report: datasets\04_augmented\ultimate_augmentation_report.json
+   Configuration file: datasets\04_augmented\data.yaml
+
+💡 NEXT STEPS
+   1. Use augmented dataset for training
+   2. Monitor training performance on augmented data
+   3. Consider additional augmentation strategies if needed
+======================================================================
+
+Augmentation complete. Report saved to: datasets\04_augmented\ultimate_augmentation_report.json
+(myenv) PS D:\Pytorch 2\lpr_system> 

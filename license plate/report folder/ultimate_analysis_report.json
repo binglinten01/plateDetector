@@ -1,0 +1,264 @@
+{
+  "basic_statistics": {
+    "total_images": 24436,
+    "images_per_split": {
+      "train": 17044,
+      "val": 4922,
+      "test": 2470
+    },
+    "labels_per_split": {
+      "train": 17044,
+      "val": 4922,
+      "test": 2470
+    },
+    "images_without_labels": 0,
+    "average_plates_per_image": 0.8000000000000002
+  },
+  "image_quality": {
+    "blur_scores": {
+      "count": 999,
+      "mean": 237.47426797445254,
+      "std": 152.2172520748419,
+      "min": 18.271497856309676,
+      "max": 1446.572022241211,
+      "median": 201.53609871556762,
+      "q1": 135.87422968215344,
+      "q3": 294.65838401841813
+    },
+    "brightness_values": {
+      "count": 999,
+      "mean": 100.18092771331564,
+      "std": 38.62309629800953,
+      "min": 6.83515625,
+      "max": 221.12201904296876,
+      "median": 99.4447216796875,
+      "q1": 72.47502319335938,
+      "q3": 126.62749389648438
+    },
+    "contrast_values": {
+      "count": 999,
+      "mean": 59.209714468968386,
+      "std": 11.422776168359267,
+      "min": 15.421959762572202,
+      "max": 99.70401188396005,
+      "median": 58.63027824302975,
+      "q1": 51.71212288975852,
+      "q3": 66.75553054085076
+    },
+    "resolutions": {
+      "count": 999,
+      "mean": 654.974974974975,
+      "std": 122.9597229495993,
+      "min": 640.0,
+      "max": 1920.0,
+      "median": 640.0,
+      "q1": 640.0,
+      "q3": 640.0
+    },
+    "orientation_angles": {
+      "count": 999,
+      "mean": 5.4044005833827224,
+      "std": 57.93044236187243,
+      "min": -89.00000762939453,
+      "max": 90.0,
+      "median": 0.0,
+      "q1": -9.250015258789062,
+      "q3": 70.74999618530273
+    },
+    "blur_quality": {
+      "threshold": 100.0,
+      "percent_blurry": 10.11011011011011,
+      "assessment": "Needs Attention"
+    }
+  },
+  "bounding_box_analysis": {
+    "widths": {
+      "count": 2260,
+      "mean": 189.38415775044245,
+      "std": 140.37392046818687,
+      "min": 6.02303999999998,
+      "max": 913.0003200000002,
+      "median": 148.69791999999998
+    },
+    "heights": {
+      "count": 2260,
+      "mean": 138.83787005486727,
+      "std": 101.66328900923479,
+      "min": 4.035200000000032,
+      "max": 646.9999200000001,
+      "median": 113.09344000000002
+    },
+    "areas": {
+      "count": 2260,
+      "mean": 37525.19676135904,
+      "std": 58527.652732129616,
+      "min": 24.30417100800011,
+      "max": 484602.73304002575,
+      "median": 17269.653182464
+    },
+    "aspect_ratios": {
+      "count": 2260,
+      "mean": 1.5158651281501496,
+      "std": 0.7028085819718506,
+      "min": 0.13987901111409523,
+      "max": 9.062409522277678,
+      "median": 1.32751917000774
+    },
+    "positions_x": {
+      "count": 2260,
+      "mean": 0.5034945008849558,
+      "std": 0.16212002063453768,
+      "min": 0.005469,
+      "max": 0.989844,
+      "median": 0.505894
+    },
+    "positions_y": {
+      "count": 2260,
+      "mean": 0.5654815659292035,
+      "std": 0.150411269367207,
+      "min": 0.03612099999999999,
+      "max": 0.9875659999999999,
+      "median": 0.558333
+    },
+    "area_ratios": {
+      "count": 2260,
+      "mean": 0.05105674767546371,
+      "std": 0.1060155735748059,
+      "min": 5.933635500000027e-05,
+      "max": 1.0,
+      "median": 0.034457099538000024
+    },
+    "total_annotations_analyzed": 2260,
+    "area_validation": {
+      "min_threshold": 1000,
+      "max_threshold": 100000,
+      "percent_too_small": 4.469026548672566,
+      "percent_too_large": 8.053097345132745,
+      "assessment": "Needs Attention"
+    }
+  },
+  "plate_characteristics": {
+    "note": "Advanced plate analysis requires OCR and plate format parsing",
+    "recommended_analyses": [
+      "Plate text pattern analysis",
+      "Color histogram analysis",
+      "Regional pattern detection",
+      "Font style classification",
+      "Special plate type identification"
+    ]
+  },
+  "dataset_distribution": {
+    "split_ratios": {
+      "train": {
+        "count": 17044,
+        "percentage": 69.74954984449172
+      },
+      "val": {
+        "count": 4922,
+        "percentage": 20.142412833524308
+      },
+      "test": {
+        "count": 2470,
+        "percentage": 10.108037321983957
+      }
+    },
+    "plate_size_distribution": {},
+    "aspect_ratio_distribution": {},
+    "position_distribution": {}
+  },
+  "correlation_analysis": {
+    "correlation_matrix": {
+      "image_width": {
+        "image_width": 1.0,
+        "image_height": 0.9774565912658801,
+        "blur_score": -0.09319774368798733,
+        "brightness": -0.05016771519261001,
+        "contrast": 0.030010222034521982
+      },
+      "image_height": {
+        "image_width": 0.9774565912658801,
+        "image_height": 1.0,
+        "blur_score": -0.09904534800125306,
+        "brightness": -0.05916157334458851,
+        "contrast": 0.0033865094483013724
+      },
+      "blur_score": {
+        "image_width": -0.09319774368798733,
+        "image_height": -0.09904534800125306,
+        "blur_score": 1.0,
+        "brightness": 0.1620318090345429,
+        "contrast": 0.2848562174963864
+      },
+      "brightness": {
+        "image_width": -0.05016771519261001,
+        "image_height": -0.05916157334458851,
+        "blur_score": 0.1620318090345429,
+        "brightness": 1.0,
+        "contrast": 0.21156133397208285
+      },
+      "contrast": {
+        "image_width": 0.030010222034521982,
+        "image_height": 0.0033865094483013724,
+        "blur_score": 0.2848562174963864,
+        "brightness": 0.21156133397208285,
+        "contrast": 1.0
+      }
+    },
+    "significant_correlations": [
+      {
+        "variables": "image_width vs image_height",
+        "correlation": 0.9774565912658801,
+        "strength": "Strong"
+      }
+    ],
+    "data_points": 300
+  },
+  "rare_pattern_detection": {
+    "note": "Rare pattern detection requires OCR and advanced feature extraction",
+    "detection_methods": [
+      "DBSCAN clustering on plate features",
+      "Outlier detection in aspect ratios",
+      "Text pattern frequency analysis",
+      "Color histogram outlier detection"
+    ]
+  },
+  "data_leakage_check": {
+    "duplicate_filenames": [],
+    "total_checks": 24436,
+    "leakage_detected": false
+  },
+  "quality_assessment": {
+    "checks": [
+      {
+        "check": "Minimum dataset size",
+        "status": "PASS",
+        "details": "24,436 images (\u2265 1,000 required)"
+      },
+      {
+        "check": "Split balance",
+        "status": "PASS",
+        "details": "Split ratios: {'train': 0.6974954984449173, 'val': 0.2014241283352431, 'test': 0.10108037321983958}"
+      },
+      {
+        "check": "Train set dominance",
+        "status": "PASS",
+        "details": "Train ratio: 69.7%"
+      }
+    ],
+    "passing_checks": 3,
+    "total_checks": 3,
+    "pass_rate": 100.0
+  },
+  "quality_deductions": [
+    "High blur percentage (10.1%): -0.1",
+    "Many large bboxes (8.1%): -3.1"
+  ],
+  "raw_quality_score": 96.83679254475715,
+  "overall_quality_score": 96.83679254475715,
+  "quality_grade": "A+",
+  "metadata": {
+    "analysis_timestamp": "2025-12-06T22:03:11.334556",
+    "analyzer_version": "1.0.0",
+    "config_used": "configs/data_license_plate.yaml"
+  }
+}

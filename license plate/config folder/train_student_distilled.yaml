@@ -1,0 +1,31 @@
+# Knowledge distillation config for student model
+
+# Student model
+student_model: "yolo11n.pt"
+pretrained: true
+
+# Distillation parameters
+epochs: 80
+batch_size: 8
+gradient_accumulation: 4
+image_size: 640  # Smaller for faster inference
+
+# Learning rate
+lr: 1e-4
+weight_decay: 1e-4
+warmup_epochs: 5
+
+# Distillation weights
+alpha: 0.7  # Teacher weight
+beta: 0.3   # Feature distillation weight
+temperature_start: 3.0
+temperature_end: 1.0
+
+# Hardware optimization
+use_amp: true
+workers: 8
+cache_dataset: true
+
+# Thermal management
+max_temperature: 80.0  # Lower threshold for student training
+check_interval: 20

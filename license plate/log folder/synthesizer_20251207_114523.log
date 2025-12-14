@@ -1,0 +1,38 @@
+(myenv) PS D:\Pytorch 2\lpr_system> python scripts/06_generate_synthetic.py
+2025-12-07 11:48:45,792 - INFO - Initialized SimpleSynthesizer
+2025-12-07 11:48:45,792 - INFO - ============================================================
+2025-12-07 11:48:45,792 - INFO - STARTING SYNTHETIC DATA GENERATION
+2025-12-07 11:48:45,792 - INFO - ============================================================
+2025-12-07 11:48:46,228 - INFO - Generated 100 plates...
+2025-12-07 11:48:46,618 - INFO - Generated 200 plates...
+2025-12-07 11:48:47,015 - INFO - Generated 300 plates...
+2025-12-07 11:48:47,438 - INFO - Generated 400 plates...
+2025-12-07 11:48:48,591 - INFO - Generated 500 plates...
+2025-12-07 11:48:49,832 - INFO - Generated 600 plates...
+2025-12-07 11:48:51,240 - INFO - Generated 700 plates...
+2025-12-07 11:48:52,196 - INFO - Generated 800 plates...
+2025-12-07 11:48:52,676 - INFO - Generated 900 plates...
+2025-12-07 11:48:53,090 - INFO - Generated 1000 plates...
+
+======================================================================
+SYNTHETIC DATA GENERATION - SUMMARY
+======================================================================
+
+📊 GENERATION STATISTICS
+   Total plates generated: 1,000
+   Failed generations: 0
+
+📁 OUTPUT LOCATION
+   Dataset: datasets\06_synthetic
+   Images: datasets\06_synthetic\images
+   Labels: datasets\06_synthetic\labels
+   Report: datasets\06_synthetic\synthetic_generation_report.json
+
+💡 USAGE SUGGESTIONS
+   1. Mix with real dataset for training
+   2. Use for testing rare patterns
+   3. Combine with augmented dataset
+======================================================================
+
+✅ Generated 1000 synthetic plates
+📁 Output: datasets\06_synthetic

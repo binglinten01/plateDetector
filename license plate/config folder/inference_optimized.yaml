@@ -1,0 +1,74 @@
+# Optimized inference configuration for RTX 4060
+
+# Model settings
+model_path: "models/detector/best_model.pt"
+image_size: 640  # Optimized for speed
+conf_threshold: 0.25  # Lower for higher recall
+iou_threshold: 0.45   # Balanced between precision and recall
+
+# GPU optimization
+use_cuda: true
+half_precision: true  # Use FP16 for inference
+cudnn_benchmark: true
+cudnn_deterministic: false
+
+# Batch processing
+batch_size: 8  # Optimal for RTX 4060
+max_detections: 300  # Maximum detections per image
+agnostic_nms: false  # Class-aware NMS
+
+# Post-processing
+nms_type: "diou"  # Options: "nms", "soft_nms", "diou", "ciou"
+soft_nms_sigma: 0.5
+diou_threshold: 0.7
+
+# Multi-scale inference
+multi_scale: false
+scales: [0.5, 1.0, 1.5]  # If multi_scale is true
+
+# Ensemble settings (if using ensemble)
+ensemble:
+  enabled: false
+  models:
+    - "models/detector/model1.pt"
+    - "models/detector/model2.pt"
+    - "models/detector/model3.pt"
+  method: "weighted_voting"  # weighted_voting, nms, average
+
+# TTA (Test-Time Augmentation)
+tta:
+  enabled: false
+  strategies: ["flip_h", "flip_v", "scale_0.8", "scale_1.2"]
+  merge_method: "weighted_average"
+
+# Performance optimization
+warmup_iterations: 10
+benchmark: true
+profile: false  # Enable for detailed profiling
+
+# Output settings
+save_images: true
+save_txt: false
+save_json: true
+save_crop: false
+visualize: true
+
+# Class-specific settings
+classes: [0]  # Class indices to detect (0 = license plate)
+class_names: ["license_plate"]
+
+# Region of interest (optional)
+roi:
+  enabled: false
+  x1: 0.0
+  y1: 0.0
+  x2: 1.0
+  y2: 1.0
+
+# Memory optimization
+empty_cache_interval: 100  # Clear cache every 100 images
+max_queue_size: 1000  # Maximum queue size for async inference
+
+# Real-time optimization
+stream_buffer: 10  # Buffer size for video streaming
+skip_frames: 0  # Skip frames for faster processing

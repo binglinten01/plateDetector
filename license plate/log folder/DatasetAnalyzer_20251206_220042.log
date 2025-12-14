@@ -1,0 +1,79 @@
+(myenv) PS D:\Pytorch 2\lpr_system> python .\scripts\03_analyze_dataset.py
+2025-12-06 22:00:42,787 - INFO - Initialized UltimateDatasetAnalyzer
+2025-12-06 22:00:42,787 - INFO - ============================================================
+2025-12-06 22:00:42,787 - INFO - STARTING ULTIMATE DATASET ANALYSIS
+2025-12-06 22:00:42,787 - INFO - ============================================================
+2025-12-06 22:00:42,787 - INFO - Loading dataset structure...
+2025-12-06 22:00:42,907 - INFO - 📊 Dataset loaded: 24,436 total images
+2025-12-06 22:00:42,907 - INFO -   train: 17,044 images (69.7%)
+2025-12-06 22:00:42,907 - INFO -   val: 4,922 images (20.1%)
+2025-12-06 22:00:42,907 - INFO -   test: 2,470 images (10.1%)
+2025-12-06 22:00:42,907 - INFO -
+🔍 Running: Basic Statistics
+2025-12-06 22:00:42,910 - INFO - Analyzing basic statistics...
+2025-12-06 22:01:24,954 - INFO - ✅ Completed: basic_statistics
+2025-12-06 22:01:24,954 - INFO -
+🔍 Running: Image Quality
+2025-12-06 22:01:24,954 - INFO - Analyzing image quality (sampling 1000 images)...
+Analyzing image quality: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 999/999 [00:46<00:00, 21.46it/s] 
+2025-12-06 22:02:11,518 - INFO - ✅ Completed: image_quality
+2025-12-06 22:02:11,519 - INFO -
+🔍 Running: Bounding Box Analysis
+2025-12-06 22:02:11,520 - INFO - Analyzing bounding boxes (sampling 2000)...
+2025-12-06 22:02:57,033 - INFO - ✅ Completed: bounding_box_analysis
+2025-12-06 22:02:57,033 - INFO - 
+🔍 Running: Plate Characteristics
+2025-12-06 22:02:57,034 - INFO - Analyzing plate characteristics...
+2025-12-06 22:02:57,034 - INFO - ✅ Completed: plate_characteristics
+2025-12-06 22:02:57,034 - INFO -
+🔍 Running: Dataset Distribution
+2025-12-06 22:02:57,034 - INFO - Analyzing dataset distribution...
+2025-12-06 22:02:57,035 - INFO - ✅ Completed: dataset_distribution
+2025-12-06 22:02:57,035 - INFO -
+🔍 Running: Correlation Analysis
+2025-12-06 22:02:57,035 - INFO - Analyzing correlations...
+2025-12-06 22:02:58,957 - INFO - ✅ Completed: correlation_analysis
+2025-12-06 22:02:58,958 - INFO - 
+🔍 Running: Rare Pattern Detection
+2025-12-06 22:02:58,958 - INFO - Detecting rare patterns...
+2025-12-06 22:02:58,958 - INFO - ✅ Completed: rare_pattern_detection
+2025-12-06 22:02:58,959 - INFO -
+🔍 Running: Data Leakage Check
+2025-12-06 22:02:58,959 - INFO - Checking for data leakage...
+2025-12-06 22:02:58,972 - INFO - ✅ Completed: data_leakage_check
+2025-12-06 22:02:58,972 - INFO -
+🔍 Running: Quality Assessment
+2025-12-06 22:02:58,974 - INFO - Assessing dataset quality...
+2025-12-06 22:02:58,974 - INFO - ✅ Completed: quality_assessment
+2025-12-06 22:02:58,974 - INFO -
+🎨 Generating visualizations...
+2025-12-06 22:03:11,334 - INFO - 📊 Visualizations saved to: results\phase0_reports\visualizations\dataset_analysis
+2025-12-06 22:03:11,335 - INFO - 📄 Comprehensive report saved to: results\phase0_reports\phase0_reports\ultimate_analysis_report.json
+
+======================================================================
+DATASET ANALYSIS - EXECUTIVE SUMMARY
+======================================================================
+
+📊 BASIC STATISTICS
+   Total Images: 24,436
+   TRAIN: 17,044 (69.7%)
+   VAL: 4,922 (20.1%)
+   TEST: 2,470 (10.1%)
+
+🎯 QUALITY ASSESSMENT
+   Overall Score: 96.8/100
+   Grade: A+
+
+🔍 KEY FINDINGS
+   ⚠️  High blur percentage: 10.1%
+   ⚠️  Bounding box size issues: 4.5% too small, 8.1% too large
+   ✅ No data leakage detected
+
+💡 RECOMMENDATIONS
+   1. Excellent dataset quality
+   2. Ready for production-level training
+   3. Consider advanced augmentation techniques
+
+📁 Reports saved to: results\phase0_reports\phase0_reports
+🎨 Visualizations saved to: results\phase0_reports\visualizations\dataset_analysis
+======================================================================
