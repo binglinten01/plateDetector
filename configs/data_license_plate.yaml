@@ -1,0 +1,111 @@
+dataset:
+  name: vietnam_license_plate_phase0
+  description: "Cleaned + augmented Vietnam license plate dataset for LPR (YOLO format)"
+  total_images: 21000
+  splits:
+    train: 0.70
+    valid: 0.20
+    test: 0.10
+  source_urls:
+    - https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e/dataset/4
+    - https://www.kaggle.com/datasets/bomaich/vnlicenseplate
+    - https://universe.roboflow.com/tran-ngoc-xuan-x/vietnam-license-plate-h8t3n
+  classes:
+    0: license_plate
+  plate_formats:
+    - "^[0-9]{2}[A-Z]{1,2}[0-9]{4,5}$" # Standard: 51A-12345
+    - "^[0-9]{2}[A-Z]{1,2}[0-9]{3,4}[A-Z]{1,2}$" # Special plates
+    - "^[A-Z]{2}[0-9]{4,5}$" # Government plates
+    - "^[0-9]{2}[A-Z]{1}[0-9]{4,5}[A-Z]{1}$" # New format
+
+analysis:
+  aspect_ratio:
+    mean: 3.1
+    median: 3.0
+    std: 0.5
+  plate_width_px:
+    mean: 220
+    min: 80
+    max: 600
+  orientation_deg:
+    mean: 2.3
+    std: 15.0
+  brightness_mean: 120
+  contrast_mean: 45
+  quality_laplacian_mean: 250
+
+cleaning:
+  blur_threshold_laplacian: 100.0
+  min_bbox_area_px: 1000
+  max_bbox_area_px: 100000
+  iou_label_detector_threshold: 0.5
+  remove_corrupted: true
+  deduplicate_iou_threshold: 0.95
+  label_confidence_threshold: 0.8
+
+augmentation:
+  basic:
+    hsv: { h: 0.015, s: 0.7, v: 0.4 }
+    fliplr: 0.5
+    flipud: 0.0
+    rotate: [-5, 5]
+    scale: [0.8, 1.2]
+    translate: 0.1
+  advanced:
+    perspective: { scale: [0.02, 0.15], p: 0.6 }
+    motion_blur: { kernel_size: [3, 7], angle: [-45, 45], p: 0.4 }
+    low_light_sim: { gamma_range: [1.5, 3.0], p: 0.3 }
+    gaussian_noise: { var_range: [10, 50], p: 0.3 }
+    cutout: { size_range: [0.02, 0.2], p: 0.5 }
+  generative:
+    use_gan_for_rare: true
+    min_samples_for_gan: 50
+    gan_model_path: "models/pretrained/plate_gan.pth"
+
+sampling:
+  strategy: weighted
+  bins:
+    tiny: { aspect_ratio: [2.0, 2.5], weight: 3.0 }
+    small: { aspect_ratio: [2.5, 3.0], weight: 2.0 }
+    medium: { aspect_ratio: [3.0, 3.5], weight: 1.0 }
+    large: { aspect_ratio: [3.5, 4.5], weight: 0.7 }
+    extra_large: { aspect_ratio: [4.5, 6.0], weight: 2.5 }
+
+pseudo_labeling:
+  enabled: true
+  confidence_threshold: 0.75
+  review_sample_percent: 0.05
+  max_pseudo_per_class: 1000
+  source_raw_folder: "datasets/00_raw/unlabeled"
+
+versioning:
+  use_dvc: true
+  dvc_remote: "s3://my-dvc-remote"
+  git_lfs_patterns:
+    - "datasets/**"
+    - "models/**"
+    - "results/**"
+  dataset_version: "v1.0.0"
+  commit_message: "Phase0 - Cleaned and augmented Vietnam license plate dataset"
+
+paths:
+  raw_data: "datasets/00_raw"
+  interim_data: "datasets/01_interim"
+  processed_data: "datasets/02_processed/license_plate"
+  cleaned_data: "datasets/03_cleaned"
+  augmented_data: "datasets/04_augmented"
+  flagged_data: "datasets/05_flagged"
+  pseudo_data: "datasets/06_pseudo"
+  results: "results/phase0_reports"
+  logs: "results/logs"
+
+quality_metrics:
+  target_metrics:
+    blur_percent_max: 5.0
+    label_error_max: 2.0
+    class_balance_min: 0.8
+    aspect_ratio_std_max: 1.0
+  validation:
+    test_split_size: 0.1
+    k_folds: 5
+    random_seed: 42

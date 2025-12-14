@@ -1,0 +1,49 @@
+image_size: 768
+batch_size: 4
+gradient_accumulation: 8
+workers: 10
+persistent_workers: true
+cache_dataset: true
+
+# Training optimization
+epochs: 150
+lr: 0.0003
+weight_decay: 0.0001
+warmup_epochs: 5
+
+# Advanced techniques
+use_amp: true
+use_ema: true
+ema_decay: 0.9997
+label_smoothing: 0.05
+focal_gamma: 2.0
+sam_interval: 4
+grad_clip: 10.0
+
+# Thermal management
+max_temperature: 85.0
+cooling_pause: 30
+check_interval: 10
+
+# Early stopping
+early_stopping_patience: 20
+early_stopping_min_delta: 0.001
+
+# Checkpointing
+save_checkpoint_interval: 1
+keep_checkpoints: 5
+
+# Validation
+val_interval: 1
+val_batch_size: 8
+
+# Logging
+log_interval: 10
+tensorboard: true
+wandb: false  # Set to true if using Weights & Biases
+
+# Dataset
+train_images: "datasets/07_final_training/images/train"
+val_images: "datasets/07_final_training/images/val"
+data_yaml: "datasets/07_final_training/data.yaml"
+

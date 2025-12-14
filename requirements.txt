@@ -1,0 +1,58 @@
+#
+# requirements.txt (ALL-IN-ONE)
+# - Core (Phase0 + Phase1)
+# - Export (ONNX / ONNXRuntime)
+# - Dev tools (ruff/black/pytest)
+#
+# Note: PyTorch is intentionally NOT pinned here (install it separately for your CUDA/CPU).
+
+ultralytics>=8.3.0
+
+# Common
+numpy>=1.24
+PyYAML>=6.0.1
+tqdm>=4.66.0
+python-dotenv>=1.0.1
+
+# CV / images
+opencv-python>=4.8.0.76
+Pillow>=10.0.0
+albumentations>=1.4.0
+
+# Data download
+roboflow>=1.1.0
+kaggle>=1.6.12
+
+# Analysis / reporting (Phase0)
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.13.0
+scipy>=1.10.0
+scikit-learn>=1.3.0
+plotly>=5.18.0
+
+# Optional utilities used by some scripts (duplicate detection)
+ImageHash>=4.3.1
+
+# -----------------------------
+# Export / deployment (optional)
+# -----------------------------
+# Install only if you run `license plate/phase folder/phase1/04_production_export_ultimate.py`.
+onnx>=1.15.0
+
+# Choose ONE (keep onnxruntime for CPU by default):
+onnxruntime>=1.17.0
+# onnxruntime-gpu>=1.17.0
+
+# TensorRT:
+# On Windows, TensorRT is typically installed via NVIDIA (not reliably via pip).
+# If you already have a working TensorRT Python binding, you may use it.
+# tensorrt
+
+# -----------------------------
+# Dev / formatting / tests
+# -----------------------------
+ruff>=0.6.0
+black>=24.4.0
+pytest>=8.0.0
+
