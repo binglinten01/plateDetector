@@ -1,0 +1,39 @@
+# Rename this file to `.gitignore` after cloning.
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.so
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Logs / runs / outputs
+*.log
+runs/
+results/
+
+# Large artifacts (keep out of git)
+datasets/
+models/
+*.pt
+*.onnx
+*.engine
+
+# Env files / secrets
+.env
+
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+.idea/
+.vscode/
+
